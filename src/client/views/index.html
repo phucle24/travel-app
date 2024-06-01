@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel App</title>
+
+</head>
+
+<body>
+
+    <header>
+        <div class="">
+            Logo
+        </div>
+        <div class="">
+            navigation
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <div class="container">
+                <div class="title">
+                    <h2>Plan Your Trip</h2>
+                </div>
+                <form class="form__submit" onsubmit="return Client.handleSubmit(event)">
+                    <label for="location">Destination:</label>
+                    <input type="text" id="location" name="location" value="" placeholder="Enter your destination"
+                        required>
+                    <br>
+                    <label for="date">Departure Date:</label>
+                    <input type="date" id="date" name="date" required>
+                    <br>
+                    <button class="button_search" type="submit">Search</button>
+                </form>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <div id="results_trip" class="results">
+                    <h2>Results</h2>
+                    <br>
+                    <div class="card">
+                        <div class="container">
+                            <div id="count_day"></div>
+                            <div id="destination"></div>
+                            <div id="weather">
+                                <div id="current_weather"></div>
+                                <img id="weather_icon" src="" alt="">
+                            </div>
+                        </div>
+                        <div id="picture"></div>
+                        <img id="location_img" src="" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>This is a footer</p>
+    </footer>
+    <script>
+        // Check that service workers are supported
+        if ("serviceWorker" in navigator) {
+            // Register a service worker hosted at the root of the
+            // site using the default scope.
+            navigator.serviceWorker.register("/service-worker.js").then(
+                (registration) => {
+                    console.log("Service worker registration succeeded:", registration);
+                },
+                (error) => {
+                    console.error(`Service worker registration failed: ${error}`);
+                },
+            );
+        } else {
+            console.error("Service workers are not supported.");
+        }
+    </script>
+</body>
+
+</html>

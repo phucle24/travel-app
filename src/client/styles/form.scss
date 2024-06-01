@@ -1,0 +1,128 @@
+.container {
+    font-family: Arial, sans-serif;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 80%;
+    max-width: 600px;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.title h2 {
+    margin: 0;
+}
+
+.form__submit {
+    display: flex;
+    flex-direction: column;
+}
+
+.form__submit label {
+    margin-bottom: 10px;
+}
+
+.form__submit input[type="text"],
+.form__submit input[type="date"] {
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+.button_search {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.button_search:hover {
+    background-color: #0056b3;
+}
+
+
+#title {
+    text-align: center;
+}
+
+#weather {
+    display: inline-flex;
+}
+
+#weather_icon {
+    width: 30px;
+    margin-top: -7px;
+}
+
+#location_img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.container {
+    font-family: Arial, sans-serif;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 80%;
+    max-width: 600px;
+}
+
+h2 {
+    text-align: center;
+}
+
+.card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.card #count_day {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.card #destination {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.card #weather {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.card #weather #current_weather {
+    margin-right: 10px;
+}
+
+.card #weather #weather_icon {
+    width: 30px;
+    height: 30px;
+}
+
+#picture {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#location_img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.results {
+    display: none;
+}
