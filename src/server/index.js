@@ -77,5 +77,5 @@ app.post('/add', async (req, res) => {
 
 // Start the server
 app.listen(PORT, function () {
-    console.log(`Evaluate news NLP listening on port ${PORT}`);
+    console.log(`Travel App listening on port ${PORT}`);
 });
