@@ -25,7 +25,7 @@
                 <div class="title">
                     <h2>Plan Your Trip</h2>
                 </div>
-                <form class="form__submit" onsubmit="return Client.handleSubmit(event)">
+                <form class="form__submit">
                     <label for="location">Destination:</label>
                     <input type="text" id="location" name="location" value="" placeholder="Enter your destination"
                         required>
@@ -33,7 +33,7 @@
                     <label for="date">Departure Date:</label>
                     <input type="date" id="date" name="date" required>
                     <br>
-                    <button class="button_search" type="submit">Search</button>
+                    <button id="button_search" type="submit">Search</button>
                 </form>
             </div>
         </section>

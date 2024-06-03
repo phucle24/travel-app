@@ -35,11 +35,11 @@ npm install
 
 
 ````
-npm run build-prod
+npm run build
 ````
 
 ````
-npm run build-dev
+npm run dev
 ````
 
 ````
