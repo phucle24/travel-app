@@ -26,8 +26,9 @@ USERNAME=*********
 PORT = 8080
 
 ````
+The app requires Node.js version 14. Packages won't install with version > 14.
 
-Version node is running v14.21.3
+The version node is running v14.21.3
 
 ````
 npm install
